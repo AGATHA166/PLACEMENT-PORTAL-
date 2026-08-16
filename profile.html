@@ -1,0 +1,110 @@
+<html lang>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="index.html">🏠 Dashboard</a>
+            <a href="jobs.html">💼 Jobs</a>
+            <a href="applications.html">📋 My Applications</a>
+            <a href="profile.html"class="active">👤 My Profile</a>
+            <a href="#">🔔 Notifications</a>
+            <a href="#">🚪 Logout</a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">
+                👤
+                <div>
+                    <strong>Student_name</strong>
+                    <small>CSE | 2022 Batch</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <h1>My Profile</h1>
+            <p>
+                Manage your placement profile and resume.
+            </p>
+            <div class="profile-grid">
+                <!-- Personal Info -->
+                <div class="card">
+                    <h3>Profile Information</h3>
+                    <div class="profile-row">
+                        <span>Name</span>
+                        <strong>Student_name</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>Email</span>
+                        <strong>student@example.com</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>Phone</span>
+                        <strong>+91 98765 43210</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>Department</span>
+                        <strong>Computer Science</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>Batch</span>
+                        <strong>2019 - 2022</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>CGPA</span>
+                        <strong>9.72</strong>
+                    </div>
+                    <button class="primary-btn">
+                        Edit Profile
+                    </button>
+                </div>
+                <!-- Resume & Skills -->
+                <div>
+                    <div class="card">
+                        <h3>Resume</h3>
+                        <div class="resume">
+                            📄 Student_name_Resume.pdf
+                        </div>
+                        <button class="secondary-btn">Change Resume</button>
+                    </div>
+                    <div class="card">
+                        <h3>Skills</h3>
+                        <div class="skills">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>SQL</span>
+                            <span>Data Structures</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Education</h3>
+                        <strong>B.E - Computer Science Engineering</strong>
+                        <p>2019 - 2022</p>
+                        <p>
+                            ABC College of Engineering
+                        </p>
+                        <strong>CGPA: 9.72</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

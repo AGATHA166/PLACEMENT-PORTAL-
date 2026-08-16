@@ -1,0 +1,149 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Portal - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="index.html" class="active">🏠 Dashboard</a>
+            <a href="jobs.html">💼 Jobs</a>
+            <a href="applications.html">📋 My Applications</a>
+            <a href="profile.html">👤 My Profile</a>
+            <a href="#">🔔 Notifications</a>
+            <a href="#">🚪 Logout</a>
+        </nav>
+    </aside>
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Header -->
+        <header class="topbar">
+            <div>
+                <h2>Placement Portal</h2>
+            </div>
+            <div class="user">
+                <span>👤</span>
+                <div>
+                    <strong>Student_name</strong>
+                    <small>CSE | 2022 Batch</small>
+                </div>
+            </div>
+        </header>
+        <!-- Dashboard -->
+        <section class="content">
+            <div class="welcome">
+                <h1>Welcome back, Student_name 👋</h1>
+                <p>Let's achieve your dream career together.</p>
+            </div>
+            <!-- Statistics -->
+            <div class="stats">
+                <div class="stat-card">
+                    <span>📋</span>
+                    <div>
+                        <small>Eligible Drives</small>
+                        <h2>12</h2>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span>📨</span>
+                    <div>
+                        <small>Applications</small>
+                        <h2>5</h2>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span>📝</span>
+                    <div>
+                        <small>Upcoming Tests</small>
+                        <h2>2</h2>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span>🏆</span>
+                    <div>
+                        <small>Offers</small>
+                        <h2>0</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Two column section -->
+            <div class="dashboard-grid">
+                <!-- Upcoming Drives -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Upcoming Drives</h3>
+                        <a href="jobs.html">View All</a>
+                    </div>
+                    <div class="drive">
+                        <div class="company-logo"><img src="logo/tcs" alt="TCS"></div>
+                        <div>
+                            <strong>TCS Digital</strong>
+                            <p>Software Engineer</p>
+                        </div>
+                        <small>25 Aug 2025</small>
+                    </div>
+                    <div class="drive">
+                        <div class="company-logo"><img src="logo/infosys" alt="Infosys"></div>
+                        <div>
+                            <strong>Infosys</strong>
+                            <p>System Engineer</p>
+                        </div>
+                        <small>30 Aug 2025</small>
+                    </div>
+                    <div class="drive">
+                        <div class="company-logo"><img src="logo/wipro" alt="Wipro"></div>
+                        <div>
+                            <strong>Wipro</strong>
+                            <p>Project Engineer</p>
+                        </div>
+                        <small>02 Sep 2025</small>
+                    </div>
+                </div>
+                <!-- Application Status -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Application Status</h3>
+                    </div>
+                    <div class="status-item">
+                        <span class="dot green"></span>
+                        <span>Applied</span>
+                        <strong>5</strong>
+                    </div>
+                    <div class="status-item">
+                        <span class="dot blue"></span>
+                        <span>Shortlisted</span>
+                        <strong>2</strong>
+                    </div>
+                    <div class="status-item">
+                        <span class="dot purple"></span>
+                        <span>In Process</span>
+                        <strong>1</strong>
+                    </div>
+                    <div class="status-item">
+                        <span class="dot red"></span>
+                        <span>Rejected</span>
+                        <strong>1</strong>
+                    </div>
+                </div>
+            </div>
+            <!-- Announcement -->
+            <div class="announcement">
+                <strong>📢 Announcement</strong>
+                <p>
+                    TCS Aptitude Test is scheduled on
+                    <b>25 August 2025 at 10:00 AM.</b>
+                </p>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

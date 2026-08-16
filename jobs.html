@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Placement Portal - Jobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="index.html">🏠 Dashboard</a>
+            <a href="jobs.html"class="active">💼 Jobs</a>
+            <a href="applications.html">📋 My Applications</a>
+            <a href="profile.html">👤 My Profile</a>
+            <a href="#">🔔 Notifications</a>
+            <a href="#">🚪 Logout</a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">👤
+                <div>
+                    <strong>Student_name</strong>
+                    <small>CSE | 2022 Batch</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <div class="page-title">
+                <div>
+                    <h1>Job Opportunities</h1>
+                    <p>
+                        Find the right placement opportunity for you.
+                    </p>
+                </div>
+            </div>
+            <!-- Search -->
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="jobSearch"
+                    placeholder="Search by company, role, skills..."
+                >
+                <button onclick="searchJobs()">🔍 Search</button>
+            </div>
+            <!-- Jobs -->
+            <div id="jobList">
+                <div class="job-card">
+                    <div class="company-logo"><img src="logo/tcs" alt="TCS"></div>
+                    <div class="job-info">
+                        <h3>TCS Digital</h3>
+                        <strong>Software Engineer</strong>
+                        <p>
+                            💰 ₹7 LPA
+                            &nbsp; 📍 Pune
+                            &nbsp; 🏢 Onsite
+                        </p>
+                        <small>B.E / B.Tech - CSE, IT, ECE</small>
+                    </div>
+                    <div class="job-action">
+                        <span class="eligible">Eligible</span>
+                        <small>Apply by 25 Aug 2025</small>
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="job-card">
+                    <div class="company-logo"><img src="logo/infosys" alt="Infosys"></div>
+                    <div class="job-info">
+                        <h3>Infosys</h3>
+                        <strong>System Engineer</strong>
+                        <p>
+                            💰 ₹6.5 LPA
+                            &nbsp; 📍 Bangalore
+                            &nbsp; 🏠 Hybrid
+                        </p>
+                        <small>B.E / B.Tech - All Branches</small>
+                    </div>
+                    <div class="job-action">
+                        <span class="eligible">Eligible</span>
+                        <small>Apply by 30 Aug 2025</small>
+                        <button>View Details</button>
+                    </div>
+                </div>
+                <div class="job-card">
+                    <div class="company-logo"><img src="logo/wipro" alt="Wipro"></div>
+                    <div class="job-info">
+                        <h3>Wipro</h3>
+                        <strong>Project Engineer</strong>
+                        <p>
+                            💰 ₹5.5 LPA
+                            &nbsp; 📍 Chennai
+                            &nbsp; 🏢 Onsite
+                        </p>
+                        <small>B.E / B.Tech - CSE, ECE, EE</small>
+                    </div>
+                    <div class="job-action">
+                        <span class="eligible">Eligible</span>
+                        <small>Apply by 02 Sep 2025</small>
+                        <button>View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
