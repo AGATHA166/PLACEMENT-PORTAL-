@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="recruiter-dashboard.html">
+                🏠 Dashboard
+            </a>
+            <a href="recruiter-profile.html" class="active">
+                👤 Recruiter Profile
+            </a>
+            <a href="post-job.html">
+                ➕ Post Job
+            </a>
+            <a href="recruiter-applicants.html">
+                👥 Applicants
+            </a>
+            <a href="recruitment-info.html">
+                📋 Recruitment Info
+            </a>
+            <a href="#">
+                🔔 Notifications
+            </a>
+            <a href="../Student/index.html">
+                🚪 Logout
+            </a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">
+                <span>👤</span>
+                <div>
+                    <strong>ABC Technologies</strong>
+                    <small>Recruiter</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <h1>Recruiter Profile</h1>
+            <p>
+                Manage your company and recruiter information.
+            </p>
+            <div class="profile-grid">
+                <div class="card">
+                    <h3>Company Information</h3>
+                    <div class="profile-row">
+                        <span>Company Name</span>
+                        <strong>ABC Technologies</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>Email</span>
+                        <strong>hr@abctech.com</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>Phone</span>
+                        <strong>+91 98765 43210</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>Industry</span>
+                        <strong>Information Technology</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>Location</span>
+                        <strong>Bangalore</strong>
+                    </div>
+                    <div class="profile-row">
+                        <span>Website</span>
+                        <strong>www.abctech.com</strong>
+                    </div>
+                    <button
+                        class="primary-btn"
+                        onclick="showMessage('Profile editing feature is available in the prototype.')">
+                        Edit Profile
+                    </button>
+                </div>
+                <div>
+                    <div class="card">
+                        <h3>Recruiter Information</h3>
+                        <div class="profile-row">
+                            <span>Recruiter Name</span>
+                            <strong>John Mathew</strong>
+                        </div>
+                        <div class="profile-row">
+                            <span>Designation</span>
+                            <strong>HR Manager</strong>
+                        </div>
+                        <div class="profile-row">
+                            <span>Email</span>
+                            <strong>john@abctech.com</strong>
+                        </div>
+                        <div class="profile-row">
+                            <span>Department</span>
+                            <strong>Human Resources</strong>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Recruitment Status</h3>
+                        <div class="status-item">
+                            <span class="dot green"></span>
+                            <span>Recruiter Account</span>
+                            <strong>Verified</strong>
+                        </div>
+                        <div class="status-item">
+                            <span class="dot blue"></span>
+                            <span>Active Job Posts</span>
+                            <strong>4</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

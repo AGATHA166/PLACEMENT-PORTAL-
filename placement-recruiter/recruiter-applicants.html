@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Applicants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="recruiter-dashboard.html">
+                🏠 Dashboard
+            </a>
+            <a href="recruiter-profile.html">
+                👤 Recruiter Profile
+            </a>
+            <a href="post-job.html">
+                ➕ Post Job
+            </a>
+            <a href="recruiter-applicants.html" class="active">
+                👥 Applicants
+            </a>
+            <a href="recruitment-info.html">
+                📋 Recruitment Info
+            </a>
+            <a href="#">
+                🔔 Notifications
+            </a>
+            <a href="../Student/index.html">
+                🚪 Logout
+            </a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">
+                👤
+                <div>
+                    <strong>ABC Technologies</strong>
+                    <small>Recruiter</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <h1>Applicants</h1>
+            <p>
+                View and manage students who applied for your jobs.
+            </p>
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="applicantSearch"
+                    placeholder="Search applicants...">
+                <button onclick="searchApplicants()">
+                    🔍 Search
+                </button>
+            </div>
+            <div class="table-card">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Department</th>
+                        <th>CGPA</th>
+                        <th>Applied For</th>
+                        <th>Applied On</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="applicant-row">
+                        <td>
+                            <strong>Rahul Kumar</strong>
+                            <small class="table-subtext">
+                                rahul@example.com
+                            </small>
+                        </td>
+                        <td>CSE</td>
+                        <td>9.12</td>
+                        <td>Software Engineer</td>
+                        <td>20 Aug 2026</td>
+                        <td>
+                            <span class="badge green">
+                                Shortlisted
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Resume opened for Rahul Kumar')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="applicant-row">
+                        <td>
+                            <strong>Anjali Thomas</strong>
+                            <small class="table-subtext">
+                                anjali@example.com
+                            </small>
+                        </td>
+                        <td>ECE</td>
+                        <td>8.76</td>
+                        <td>Software Engineer</td>
+                        <td>21 Aug 2026</td>
+                        <td>
+                            <span class="badge blue">
+                                Applied
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Resume opened for Anjali Thomas')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="applicant-row">
+                        <td>
+                            <strong>Meera Joseph</strong>
+                            <small class="table-subtext">
+                                meera@example.com
+                            </small>
+                        </td>
+                        <td>CSE</td>
+                        <td>9.45</td>
+                        <td>Data Analyst</td>
+                        <td>22 Aug 2026</td>
+                        <td>
+                            <span class="badge purple">
+                                Interview
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Resume opened for Meera Joseph')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="applicant-row">
+                        <td>
+                            <strong>Arjun Nair</strong>
+                            <small class="table-subtext">
+                                arjun@example.com
+                            </small>
+                        </td>
+                        <td>IT</td>
+                        <td>8.41</td>
+                        <td>Frontend Developer</td>
+                        <td>23 Aug 2026</td>
+                        <td>
+                            <span class="badge red">
+                                Rejected
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Resume opened for Arjun Nair')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

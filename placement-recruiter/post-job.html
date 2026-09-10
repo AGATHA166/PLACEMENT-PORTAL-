@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Post Job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="recruiter-dashboard.html">
+                🏠 Dashboard
+            </a>
+            <a href="recruiter-profile.html">
+                👤 Recruiter Profile
+            </a>
+            <a href="post-job.html" class="active">
+                ➕ Post Job
+            </a>
+            <a href="recruiter-applicants.html">
+                👥 Applicants
+            </a>
+            <a href="recruitment-info.html">
+                📋 Recruitment Info
+            </a>
+            <a href="#">
+                🔔 Notifications
+            </a>
+            <a href="../Student/index.html">
+                🚪 Logout
+            </a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">
+                👤
+                <div>
+                    <strong>ABC Technologies</strong>
+                    <small>Recruiter</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <h1>Post a New Job</h1>
+            <p>
+                Create a placement opportunity for eligible students.
+            </p>
+            <div class="form-card">
+                <form onsubmit="postJob(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input
+                                type="text"
+                                value="ABC Technologies"
+                                readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Job Role</label>
+                            <input
+                                type="text"
+                                id="jobRole"
+                                placeholder="e.g. Software Engineer"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Salary Package</label>
+                            <input
+                                type="text"
+                                id="salary"
+                                placeholder="e.g. ₹7 LPA"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Location</label>
+                            <input
+                                type="text"
+                                id="location"
+                                placeholder="e.g. Bangalore"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Work Mode</label>
+                            <select id="workMode" required>
+                                <option value="">
+                                    Select
+                                </option>
+                                <option>
+                                    Onsite
+                                </option>
+                                <option>
+                                    Hybrid
+                                </option>
+                                <option>
+                                    Remote
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Minimum CGPA</label>
+                            <input
+                                type="number"
+                                id="cgpa"
+                                step="0.01"
+                                min="0"
+                                max="10"
+                                placeholder="e.g. 7.0"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Eligible Branches</label>
+                            <input
+                                type="text"
+                                id="branches"
+                                placeholder="CSE, IT, ECE"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label>Application Deadline</label>
+                            <input
+                                type="date"
+                                id="deadline"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Required Skills</label>
+                        <input
+                            type="text"
+                            id="skills"
+                            placeholder="Python, SQL, JavaScript">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Job Description</label>
+                        <textarea
+                            id="description"
+                            rows="6"
+                            placeholder="Enter job description..."
+                            required></textarea>
+                    </div>
+                    <button
+                        type="submit"
+                        class="primary-btn form-submit">
+                        Post Job
+                    </button>
+                </form>
+                <div id="jobMessage"></div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
