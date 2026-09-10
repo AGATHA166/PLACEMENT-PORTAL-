@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Manage Students</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="admin-dashboard.html">
+                🏠 Dashboard
+            </a>
+            <a href="admin-students.html" class="active">
+                👨‍🎓 Manage Students
+            </a>
+            <a href="admin-recruiters.html">
+                🏢 Manage Recruiters
+            </a>
+            <a href="admin-jobs.html">
+                💼 Manage Jobs
+            </a>
+            <a href="admin-applications.html">
+                📋 Applications
+            </a>
+            <a href="#">
+                🔔 Notifications
+            </a>
+            <a href="../Student/index.html">
+                🚪 Logout
+            </a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">
+                👤
+                <div>
+                    <strong>Placement Admin</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <h1>Manage Students</h1>
+            <p>
+                View and manage registered students.
+            </p>
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="studentSearch"
+                    placeholder="Search students...">
+                <button onclick="searchStudents()">
+                    🔍 Search
+                </button>
+            </div>
+            <div class="table-card">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Department</th>
+                        <th>Batch</th>
+                        <th>CGPA</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="student-row">
+                        <td>
+                            <strong>Rahul Kumar</strong>
+                        </td>
+                        <td>CSE</td>
+                        <td>2026</td>
+                        <td>9.12</td>
+                        <td>rahul@example.com</td>
+                        <td>
+                            <span class="badge green">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Student profile viewed')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="student-row">
+                        <td>
+                            <strong>Anjali Thomas</strong>
+                        </td>
+                        <td>ECE</td>
+                        <td>2026</td>
+                        <td>8.76</td>
+                        <td>anjali@example.com</td>
+                        <td>
+                            <span class="badge green">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Student profile viewed')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="student-row">
+                        <td>
+                            <strong>Meera Joseph</strong>
+                        </td>
+                        <td>CSE</td>
+                        <td>2026</td>
+                        <td>9.45</td>
+                        <td>meera@example.com</td>
+                        <td>
+                            <span class="badge green">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Student profile viewed')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="student-row">
+                        <td>
+                            <strong>Arjun Nair</strong>
+                        </td>
+                        <td>IT</td>
+                        <td>2026</td>
+                        <td>8.41</td>
+                        <td>arjun@example.com</td>
+                        <td>
+                            <span class="badge red">
+                                Inactive
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Student profile viewed')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="admin-dashboard.html" class="active">
+                🏠 Dashboard
+            </a>
+            <a href="admin-students.html">
+                👨‍🎓 Manage Students
+            </a>
+            <a href="admin-recruiters.html">
+                🏢 Manage Recruiters
+            </a>
+            <a href="admin-jobs.html">
+                💼 Manage Jobs
+            </a>
+            <a href="admin-applications.html">
+                📋 Applications
+            </a>
+            <a href="#">
+                🔔 Notifications
+            </a>
+            <a href="../Student/index.html">
+                🚪 Logout
+            </a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">
+                👤
+                <div>
+                    <strong>Placement Admin</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <div class="welcome">
+                <h1>Admin Dashboard 👋</h1>
+                <p>
+                    Monitor and manage placement activities.
+                </p>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <span>👨‍🎓</span>
+                    <div>
+                        <small>Total Students</small>
+                        <h2>520</h2>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span>🏢</span>
+                    <div>
+                        <small>Recruiters</small>
+                        <h2>42</h2>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span>💼</span>
+                    <div>
+                        <small>Active Jobs</small>
+                        <h2>35</h2>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span>📨</span>
+                    <div>
+                        <small>Applications</small>
+                        <h2>684</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Recent Applications</h3>
+                        <a href="admin-applications.html">
+                            View All
+                        </a>
+                    </div>
+                    <div class="drive">
+                        <div class="company-logo">
+                            👨‍🎓
+                        </div>
+                        <div>
+                            <strong>Rahul Kumar</strong>
+                            <p>
+                                ABC Technologies • Software Engineer
+                            </p>
+                        </div>
+                        <span class="badge green">
+                            Shortlisted
+                        </span>
+                    </div>
+                    <div class="drive">
+                        <div class="company-logo">
+                            👨‍🎓
+                        </div>
+                        <div>
+                            <strong>Anjali Thomas</strong>
+                            <p>
+                                Infosys • System Engineer
+                            </p>
+                        </div>
+                        <span class="badge blue">
+                            Applied
+                        </span>
+                    </div>
+                    <div class="drive">
+                        <div class="company-logo">
+                            👨‍🎓
+                        </div>
+                        <div>
+                            <strong>Meera Joseph</strong>
+                            <p>
+                                TCS • Data Analyst
+                            </p>
+                        </div>
+                        <span class="badge purple">
+                            Interview
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Recruiter Verification</h3>
+                    </div>
+                    <div class="status-item">
+                        <span class="dot green"></span>
+                        <span>Verified</span>
+                        <strong>36</strong>
+                    </div>
+                    <div class="status-item">
+                        <span class="dot blue"></span>
+                        <span>Pending</span>
+                        <strong>6</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="announcement">
+                <strong>📢 Admin Announcement</strong>
+                <p>
+                    New recruitment drives can be reviewed
+                    from the <b>Manage Jobs</b> section.
+                </p>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

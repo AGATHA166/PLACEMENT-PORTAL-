@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Manage Jobs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="admin-dashboard.html">
+                🏠 Dashboard
+            </a>
+            <a href="admin-students.html">
+                👨‍🎓 Manage Students
+            </a>
+            <a href="admin-recruiters.html">
+                🏢 Manage Recruiters
+            </a>
+            <a href="admin-jobs.html" class="active">
+                💼 Manage Jobs
+            </a>
+            <a href="admin-applications.html">
+                📋 Applications
+            </a>
+            <a href="#">
+                🔔 Notifications
+            </a>
+            <a href="../Student/index.html">
+                🚪 Logout
+            </a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">
+                👤
+                <div>
+                    <strong>Placement Admin</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <h1>Manage Jobs</h1>
+            <p>
+                View and manage job opportunities posted by recruiters.
+            </p>
+            <div class="table-card">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Job Role</th>
+                        <th>Location</th>
+                        <th>Salary</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <strong>ABC Technologies</strong>
+                        </td>
+                        <td>Software Engineer</td>
+                        <td>Bangalore</td>
+                        <td>₹8 LPA</td>
+                        <td>25 Sep 2026</td>
+                        <td>
+                            <span class="badge green">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Job details viewed')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Infosys</strong>
+                        </td>
+                        <td>System Engineer</td>
+                        <td>Bangalore</td>
+                        <td>₹6.5 LPA</td>
+                        <td>30 Sep 2026</td>
+                        <td>
+                            <span class="badge green">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Job details viewed')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>TCS</strong>
+                        </td>
+                        <td>Data Analyst</td>
+                        <td>Pune</td>
+                        <td>₹7 LPA</td>
+                        <td>02 Oct 2026</td>
+                        <td>
+                            <span class="badge blue">
+                                Pending
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="approveJob(this)">
+                                Approve
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Wipro</strong>
+                        </td>
+                        <td>Project Engineer</td>
+                        <td>Chennai</td>
+                        <td>₹5.5 LPA</td>
+                        <td>05 Oct 2026</td>
+                        <td>
+                            <span class="badge green">
+                                Active
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Job details viewed')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

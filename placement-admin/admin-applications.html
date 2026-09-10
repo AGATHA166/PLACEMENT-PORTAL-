@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Applications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="admin-dashboard.html">
+                🏠 Dashboard
+            </a>
+            <a href="admin-students.html">
+                👨‍🎓 Manage Students
+            </a>
+            <a href="admin-recruiters.html">
+                🏢 Manage Recruiters
+            </a>
+            <a href="admin-jobs.html">
+                💼 Manage Jobs
+            </a>
+            <a href="admin-applications.html" class="active">
+                📋 Applications
+            </a>
+            <a href="#">
+                🔔 Notifications
+            </a>
+            <a href="../Student/index.html">
+                🚪 Logout
+            </a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">
+                👤
+                <div>
+                    <strong>Placement Admin</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <h1>View Applications</h1>
+            <p>
+                Monitor student applications across recruitment drives.
+            </p>
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="applicationSearch"
+                    placeholder="Search by student, company or role...">
+                <button onclick="searchApplications()">
+                    🔍 Search
+                </button>
+            </div>
+            <div class="table-card">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Company</th>
+                        <th>Role</th>
+                        <th>Applied On</th>
+                        <th>Status</th>
+                        <th>Next Step</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="application-row">
+                        <td>
+                            <strong>Rahul Kumar</strong>
+                        </td>
+                        <td>
+                            ABC Technologies
+                        </td>
+                        <td>
+                            Software Engineer
+                        </td>
+                        <td>
+                            20 Aug 2026
+                        </td>
+                        <td>
+                            <span class="badge green">
+                                Shortlisted
+                            </span>
+                        </td>
+                        <td>
+                            Technical Interview
+                        </td>
+                    </tr>
+                    <tr class="application-row">
+                        <td>
+                            <strong>Anjali Thomas</strong>
+                        </td>
+                        <td>
+                            Infosys
+                        </td>
+                        <td>
+                            System Engineer
+                        </td>
+                        <td>
+                            21 Aug 2026
+                        </td>
+                        <td>
+                            <span class="badge blue">
+                                Applied
+                            </span>
+                        </td>
+                        <td>
+                            Aptitude Test
+                        </td>
+                    </tr>
+                    <tr class="application-row">
+                        <td>
+                            <strong>Meera Joseph</strong>
+                        </td>
+                        <td>
+                            TCS
+                        </td>
+                        <td>
+                            Data Analyst
+                        </td>
+                        <td>
+                            22 Aug 2026
+                        </td>
+                        <td>
+                            <span class="badge purple">
+                                Interview
+                            </span>
+                        </td>
+                        <td>
+                            HR Round
+                        </td>
+                    </tr>
+                    <tr class="application-row">
+                        <td>
+                            <strong>Arjun Nair</strong>
+                        </td>
+                        <td>
+                            Wipro
+                        </td>
+                        <td>
+                            Project Engineer
+                        </td>
+                        <td>
+                            23 Aug 2026
+                        </td>
+                        <td>
+                            <span class="badge red">
+                                Rejected
+                            </span>
+                        </td>
+                        <td>
+                            -
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

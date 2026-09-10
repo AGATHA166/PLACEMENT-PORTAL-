@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Manage Recruiters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">
+            🎓 Placement Portal
+        </div>
+        <nav>
+            <a href="admin-dashboard.html">
+                🏠 Dashboard
+            </a>
+            <a href="admin-students.html">
+                👨‍🎓 Manage Students
+            </a>
+            <a href="admin-recruiters.html" class="active">
+                🏢 Manage Recruiters
+            </a>
+            <a href="admin-jobs.html">
+                💼 Manage Jobs
+            </a>
+            <a href="admin-applications.html">
+                📋 Applications
+            </a>
+            <a href="#">
+                🔔 Notifications
+            </a>
+            <a href="../Student/index.html">
+                🚪 Logout
+            </a>
+        </nav>
+    </aside>
+    <main class="main">
+        <header class="topbar">
+            <h2>Placement Portal</h2>
+            <div class="user">
+                👤
+                <div>
+                    <strong>Placement Admin</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <h1>Manage Recruiters</h1>
+            <p>
+                Verify and manage recruiter accounts.
+            </p>
+            <div class="table-card">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Recruiter</th>
+                        <th>Email</th>
+                        <th>Industry</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <strong>ABC Technologies</strong>
+                        </td>
+                        <td>John Mathew</td>
+                        <td>john@abctech.com</td>
+                        <td>
+                            Information Technology
+                        </td>
+                        <td>
+                            <span class="badge green">
+                                Verified
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Recruiter details viewed')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Tech Solutions</strong>
+                        </td>
+                        <td>Priya Menon</td>
+                        <td>priya@techsolutions.com</td>
+                        <td>Software</td>
+                        <td>
+                            <span class="badge blue">
+                                Pending
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="verifyRecruiter(this)">
+                                Verify
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Innovate Systems</strong>
+                        </td>
+                        <td>David Thomas</td>
+                        <td>david@innovate.com</td>
+                        <td>Technology</td>
+                        <td>
+                            <span class="badge green">
+                                Verified
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="showMessage('Recruiter details viewed')">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Global Soft</strong>
+                        </td>
+                        <td>Neha Raj</td>
+                        <td>neha@globalsoft.com</td>
+                        <td>IT Services</td>
+                        <td>
+                            <span class="badge blue">
+                                Pending
+                            </span>
+                        </td>
+                        <td>
+                            <button
+                                class="small-btn"
+                                onclick="verifyRecruiter(this)">
+                                Verify
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
